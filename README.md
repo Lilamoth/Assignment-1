@@ -47,6 +47,40 @@ This part migrated the Flexbox and Grid layouts into a React-based project, demo
 ---
 
 ## Folder Structure
--Part 1 = Code, screenshots and project
+-Part 1: Has three files in it Code, screenshots and project
 -Part 2 = Code, screenshots and project
 -Part 3 = Code, screenshots and project
+
+##Challenges Faced
+Flexbox Alignment Issues:
+
+Error: Struggled with aligning items properly using justify-content and align-items.
+Resolution: Used tools like browser developer tools to inspect and adjust alignment properties.
+Grid Column Spanning Confusion:
+
+Error: Difficulty understanding how grid-column: span 2 affects the layout when combined with other items in the grid.
+Resolution: Experimented with grid-template-columns and adjusted item placement until the layout worked as expected.
+Responsive Design Problems:
+
+Error: The layout broke on smaller screens because of fixed column widths.
+Resolution: Implemented @media queries to make the design adapt to different screen sizes.
+React Migration Challenges:
+
+Error: Had trouble setting up the React environment and linking CSS files correctly.
+Resolution: Learned to use import './App.css'; in the React project to include styles and ensured the folder structure was correct.
+Media Query Debugging:
+
+Error: Media queries weren’t applying as expected due to conflicting styles in the CSS file.
+Resolution: Reviewed the cascading nature of CSS and placed media queries at the end of the CSS file.
+GitHub Repository Setup:
+
+Error: Faced issues with uploading large files or managing the folder structure on GitHub.
+Resolution: Learned to use .gitignore to exclude unnecessary files and structured the folders neatly.
+Cross-Browser Compatibility:
+
+Error: The layout appeared differently in Chrome and Firefox.
+Resolution: Tested the project on multiple browsers and made adjustments to ensure compatibility.
+Understanding flex: 1 in Flexbox:
+
+Error: Items were not resizing proportionally when using flex: 1.
+Resolution: Reviewed how flex-grow, flex-shrink, and flex-basis work together and applied them correctly.
