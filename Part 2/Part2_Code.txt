@@ -1,0 +1,318 @@
+//Index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Ahmad's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Ahmad's Portfolio</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div>
+            <h1>The only way to do great work is to love what you do.</h1>
+            <p>Discover my unique projects and creative journey.</p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 <a href="#">Ahmad Raja</a>. All Rights Reserved.
+    </footer>
+</body>
+</html>
+
+
+//Portfolio.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Ahmad's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Ahmad's Portfolio</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="portfolio">
+        <h2>My Projects</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                
+                <h3>Medical Management System</h3>
+                <h4>Designed and developed a software application using VB.NET to manage patient records, 
+                    appointments, and billing. Integrated a database management 
+                    system to store and retrieve data efficiently.</h4>
+            </div>
+            <div class="portfolio-item">
+                <h3>Tic-Tac-Toe Game</h3>
+                <h4>
+                    Created an interactive Tic-Tac-Toe game using React.
+                         Focused on implementing dynamic components, state management, and a user-friendly interface.
+                </h4>
+
+            </div>
+            <div class="portfolio-item">
+                <h3>Music Player</h3>
+                <h4>
+                    Built a functional music player application that allows users to play, pause, and skip tracks. 
+                    Worked on the design and logic to ensure a smooth user experience.
+                </h4>
+            </div>
+        </div>
+    </section>
+    <style>
+        
+    </style>
+    <footer>
+        &copy; 2025 <a href="#">Ahmad Raja</a>. All Rights Reserved.
+    </footer>
+</body>
+</html>
+
+
+//Contact.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Ahmad's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Ahmad's Portfolio</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2025 <a href="#">Ahmad Raja</a>. All Rights Reserved.
+    </footer>
+</body>
+</html>
+
+
+
+//Styles.css
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f7f0e4, #e9f5f2);
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #4a4e69;
+    color: #f2e9e4;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #f2e9e4;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff7f50;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: radial-gradient(circle, #4a4e69, #22223b);
+    color: #f2e9e4;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 2rem;
+    background-color: #fef9ef;
+    border-top: 4px solid #4a4e69;
+}
+
+.portfolio h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #4a4e69;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.portfolio-item {
+    background: linear-gradient(135deg, #c9ada7, #9a8c98);
+    padding: 1rem;
+    border: 2px solid #4a4e69;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.portfolio-item img:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-item h3 {
+    margin-top: 0.5rem;
+    color: #f2e9e4;
+}
+
+/* Contact Section */
+.contact {
+    padding: 2rem;
+    background: linear-gradient(135deg, #9a8c98, #4a4e69);
+    color: #f2e9e4;
+    border-top: 4px solid #4a4e69;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #22223b;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact input, .contact textarea {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact button {
+    padding: 0.8rem;
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact button:hover {
+    background-color: #e86443;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #4a4e69;
+    color: #f2e9e4;
+}
+
+footer a {
+    color: #ff7f50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #e86443;
+}
